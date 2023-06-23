@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  background: lightgreen;
+  margin-top: 10%;
+}
+
+#myProgress {
+  background-color: #ff9801;
+  margin-top: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 30px;
+  color: #ff9801;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid #ff9801;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip .tooltiptext {
+  width: auto;
+  background: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -60px;
+}
